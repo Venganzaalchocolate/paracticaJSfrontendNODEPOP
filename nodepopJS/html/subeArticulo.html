@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/nodepopJS/css/style.css">
+    <link rel="stylesheet" href="/nodepopJS/css/form.css">
+    <link rel="stylesheet" href="/nodepopJS/css/subeArticulo.css">
+    <link rel="stylesheet" href="/nodepopJS/css/loader.css">
+    
+    <title>Nodepop</title>
+</head>
+<body>
+    <!--contenido principal-->
+    <div class="grid">
+        <header>
+            <div id="logo"><a href="index.html"></a></div>
+        </header>
+        <section>
+            <div class="cargador"><div class="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div>
+            <form>
+                <h2>Sube tu juego</h2>
+                <input type="text" name="nombre" placeholder="¿Qué juego estás vendiendo?" required title="Solo se permiten letras, números, ( ) y ' " autofocus pattern="^[()0-9a-zA-ZÀ-ÿ\u00f1\u00d1]+(\s*[()0-9a-zA-ZÀ-ÿ\u00f1\u00d1]*)*[()'0-9a-zA-ZÀ-ÿ\u00f1\u00d1\s]{3,50}$">
+                <input type="text" name="precio" min="1" max="999" placeholder="Precio en euros" required title="Solo se permiten números entre 0-999.999" pattern="^[0-9]{1,3}$|^[0-9]{1,3}\.[0-9]{1,3}$">
+                <div class="radio">
+                    <label for="busca">Busco</label>
+                    <input type="radio" id="busca" name="estado" value="Busca">
+                    <label for="vende">Vendo</label>
+                    <input type="radio" id="vende" name="estado" value="Vende" checked>
+                </div>
+                <input type="url" name="imagen" placeholder="Pon la url de tu imagen" title="Solo se permite una url válida. Ejemplo: http://ejemplo.com/ejemploimagen.jpg" pattern="^https?:\/\/[\w\-]+(\.[\w\-]+)+[/#?]?.*$">
+                <button type="submit">Subir</button>
+                <div class="mensaje"></div>
+            </form>
+        </section>
+        <footer></footer>
+    </div>
+    <script type="module" src="/nodepopJS/js/creaArticulo.js"></script>
+</body>
+</html>

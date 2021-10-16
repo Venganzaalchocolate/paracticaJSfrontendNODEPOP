@@ -1,0 +1,114 @@
+{
+  "users": [
+    {
+      "username": "usuario1",
+      "password": "$2b$10$Y7oU4Nv/BMbb8o.yetAmYe/Dn22z/CLAafJ4HNVQz9EUPVwXqSb6S",
+      "email": "usuario1@gmail.com",
+      "id": 1
+    },
+    {
+      "username": "usuario2",
+      "password": "$2b$10$Y7oU4Nv/BMbb8o.yetAmYe/Dn22z/CLAafJ4HNVQz9EUPVwXqSb6S",
+      "email": "usuario2@gmail.com",
+      "id": 2
+    },
+    {
+      "username": "usuario3",
+      "password": "$2b$10$Y7oU4Nv/BMbb8o.yetAmYe/Dn22z/CLAafJ4HNVQz9EUPVwXqSb6S",
+      "email": "usuario3@gmail.com",
+      "id": 3
+    }
+  ],
+  "articulos": [
+    {
+      "nombre": "Insondable",
+      "precio": "79.99",
+      "estado": "Vende",
+      "imagen": "https://media.zacatrus.es/catalog/product/cache/f22f70ef8ee260256901b557cf6bf49a/j/u/juego-insondable.jpg",
+      "userId": 1,
+      "updatedAt": "2021-10-16T08:39:36.492Z",
+      "id": 1
+    },
+    {
+      "nombre": "Canción de hielo y fuego(Caja de Inicio Guardia de la Noche)",
+      "precio": "80",
+      "estado": "Busca",
+      "imagen": "/nodepopJS/recursos/imagenes/noImagen.jpg",
+      "userId": 1,
+      "updatedAt": "2021-10-16T08:40:21.263Z",
+      "id": 2
+    },
+    {
+      "nombre": "Fuji Koro (Edición Deluxe)",
+      "precio": "100",
+      "estado": "Busca",
+      "imagen": "https://media.zacatrus.es/catalog/product/cache/f22f70ef8ee260256901b557cf6bf49a/f/u/fujikorodeluxe_caja.jpeg",
+      "userId": 1,
+      "updatedAt": "2021-10-16T08:42:26.159Z",
+      "id": 3
+    },
+    {
+      "nombre": "Arkham Noir(Los asesinatos del culto de la bruja)",
+      "precio": "10",
+      "estado": "Vende",
+      "imagen": "https://media.zacatrus.es/catalog/product/cache/f22f70ef8ee260256901b557cf6bf49a/a/r/arkham_noir_los_asesinatos_del_culto_de_la_bruja-.jpg",
+      "userId": 2,
+      "updatedAt": "2021-10-16T08:45:02.047Z",
+      "id": 4
+    },
+    {
+      "nombre": "Antiguo",
+      "precio": "6",
+      "estado": "Busca",
+      "imagen": "https://www.google.com/search?q=sd&oq=sd&aqs=chrome..69i57j46i131i433i512l2j0i131i433i512j46i433i512j46i199i465i512j46i433i512j46i175i199i512j0i131i433i512j0i131i433.995j0j4&sourceid=chrome&ie=UTF-8",
+      "userId": 2,
+      "updatedAt": "2021-10-16T08:46:20.094Z",
+      "id": 5
+    },
+    {
+      "nombre": "Emo Park",
+      "precio": "100",
+      "estado": "Busca",
+      "imagen": "https://media.zacatrus.es/catalog/product/cache/f22f70ef8ee260256901b557cf6bf49a/e/m/emo-park-c_337-1067x800.jpg",
+      "userId": 2,
+      "updatedAt": "2021-10-16T08:48:09.022Z",
+      "id": 6
+    },
+    {
+      "nombre": "Expediente Dark",
+      "precio": "12.60",
+      "estado": "Vende",
+      "imagen": "https://media.zacatrus.es/catalog/product/cache/f22f70ef8ee260256901b557cf6bf49a/j/u/juego-expediente_dark_3dbox_b.jpg",
+      "userId": 3,
+      "updatedAt": "2021-10-16T08:49:20.346Z",
+      "id": 7
+    },
+    {
+      "nombre": "Tonari",
+      "precio": "25",
+      "estado": "Vende",
+      "imagen": "https://media.zacatrus.es/catalog/product/cache/f22f70ef8ee260256901b557cf6bf49a/t/o/tonari_caja.jpg",
+      "userId": 3,
+      "updatedAt": "2021-10-16T08:50:51.915Z",
+      "id": 8
+    },
+    {
+      "nombre": "Megacity Oceania",
+      "precio": "25.35",
+      "estado": "Vende",
+      "imagen": "https://media.zacatrus.es/catalog/product/cache/f22f70ef8ee260256901b557cf6bf49a/m/e/megacity_oceania.png",
+      "userId": 3,
+      "updatedAt": "2021-10-16T08:52:23.578Z",
+      "id": 9
+    },
+    {
+      "nombre": "Canción de Hielo y Fuego(Piqueros de los Inmaculados)",
+      "precio": "100",
+      "estado": "Vende",
+      "imagen": "/nodepopJS/recursos/imagenes/noImagen.jpg",
+      "userId": 3,
+      "updatedAt": "2021-10-16T08:52:59.283Z",
+      "id": 10
+    }
+  ]
+}

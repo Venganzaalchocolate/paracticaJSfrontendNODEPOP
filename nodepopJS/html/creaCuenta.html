@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/nodepopJS/css/style.css">
+    <link rel="stylesheet" href="/nodepopJS/css/form.css">
+    <link rel="stylesheet" href="/nodepopJS/css/loader.css">
+    
+    <title>Nodepop</title>
+</head>
+<body>
+    <!--contenido principal-->
+    <div class="grid">
+        <header>
+            <div id="logo"><a href="index.html"></a></div>
+        </header>
+        <div class="cargador"><div class="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div>
+        <section>
+            <form>
+                <h2>Crea tu cuenta</h2>
+                <input type="text" name="username" placeholder="Escribe aquí tu usuario" required title="Solo se permiten letras y números" autofocus pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{1,20}$"> 
+                <input type="email" name="email" placeholder="Escribe aquí tu email" required title="Por favor, introduce una dirección de correo válida">
+                <input type="password" name="password1" placeholder="Escribe aquí tu contraseña" required title="La constraseña debe tener mínimo 8 carácteres, 1 mayúscula y 1 minúscula" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$">
+                <input type="password" name="password2" placeholder="Vuelve a escribir la contraseña" required title="La constraseña debe tener mínimo 8 carácteres, 1 mayúscula y 1 minúscula" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$">
+                <!--[^\w\.@-]-->
+                <button type="submit">Crear Cuenta</button disabled>
+                <div class="enlace"><a href="login.html">Si ya tienes cuenta, <span class="a">inicia sesión</span> </a></div>
+                <div class="mensaje"></div>
+            </form>
+        </section>
+        <footer></footer>
+    </div>
+    <script type="module" src="/nodepopJS/js/creaCuenta.js"></script>
+</body>
+</html>
