@@ -9,8 +9,9 @@ export function mensajesError(error) {
     :error==="articulo is null" ? "Este artículo no existe"
     :error==="NetworkError when attempting to fetch resource." ? "En estos momentos no puedes inciar sesión, porfavor inténtalo más tarde" 
     :error==="articulos is not iterable" ? "Error al recuperar los artículos, porfavor inténtalo más tarde"
-    :error
-    
+    :error==="Wrong access token" ? "No hemos podido verificar quién eres, por favor vuelve a iniciar sesión"
+    :error 
+
     return errores
     
 }

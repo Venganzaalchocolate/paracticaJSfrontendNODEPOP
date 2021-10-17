@@ -38,7 +38,7 @@ export default class {
                     }
 
                 } catch (error) {
-                    PubSub.publish(PubSub.events.SHOW_ERROR, error)
+                    PubSub.publish(PubSub.events.SHOW_ERROR, error.message)
                 } finally {
                     PubSub.publish(PubSub.events.HIDDEN_LOADER)
                 }

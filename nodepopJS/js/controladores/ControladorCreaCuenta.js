@@ -12,6 +12,7 @@ export default class {
     escuchaEventos(){
 
         this.elemento.addEventListener('submit', async (evento)=>{
+            PubSub.publish(PubSub.events.SHOW_LOADER)
 
             //evitamos el comportamiento por defecto (que el formulario se envie) para poder comprobar antes si es válido
             evento.preventDefault()
@@ -39,7 +40,9 @@ export default class {
                 } catch (error) {
                     PubSub.publish(PubSub.events.SHOW_ERROR, error.message)
                     
-                } 
+                } finally {
+                    PubSub.publish(PubSub.events.HIDDEN_LOADER)
+                }
                 
             } else {
                 // En este punto no estaba segura de que hacer, porque el mismo navegador no me dejaría enviar el formulario si no estuviese validado no? 

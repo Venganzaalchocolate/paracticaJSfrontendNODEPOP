@@ -36,8 +36,8 @@ export default class {
                         await BaseDatos.deleteBorraArticulo(id)
                         PubSub.publish(PubSub.events.SHOW_SUCCESS, 'Se ha borrado con éxito')
                     } catch (error) {
-                        PubSub.publish(PubSub.events.SHOW_ERROR, "No se ha podido borrar el artículo")
-                    } finally {PubSub.publish(PubSub.events.HIDDEN_LOADING)}
+                        PubSub.publish(PubSub.events.SHOW_ERROR, error.message)
+                    } 
                 }
             })
         }

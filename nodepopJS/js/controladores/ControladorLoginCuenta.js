@@ -10,10 +10,10 @@ export default class {
     }
 
     iniciaSesion(){
-        
+
         // cuando se envie el formulario
         this.elemento.addEventListener('submit', async function(evento){
-
+            PubSub.publish(PubSub.events.SHOW_LOADER)
             //evitamos el comportamiento por defecto (que el formulario se envie) para poder comprobar antes si es válido
             evento.preventDefault()
 
